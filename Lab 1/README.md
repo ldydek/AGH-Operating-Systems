@@ -9,3 +9,17 @@ Dla obu wariantów implementacji należy przeprowadzić pomiar czasu wykonywania
 <h1> Zadanie 3 (50%) </h1>
 Napisz program, który będzie przeglądał katalog podany jako argument i kolejno wszystkie jego podkatalogi. 
 Program ma wypisać na standardowe wyjście następujące informacje o znalezionych plikach:
+ ścieżka bezwzględna pliku,
+-liczbę dowiązań,
+- rodzaj pliku (zwykły plik - file, katalog - dir, urządzenie znakowe - char dev, urządzenie blokowe - block dev, potok nazwany - fifo, link symboliczny - slink, soket - sock),
+- rozmiar w bajtach,
+- datę ostatniego dostępu,
+- datę ostatniej modyfikacji.
+
+Na koniec ma wypisać na standardowe wyjście informacje o liczbach plików poszczególnych rodzajów, zawartych w tym katalogu i wszystkich jego podkatalogach. Powinny zostać zliczone: zwykłe pliki, katalogi, pliki specjalne znakowe, pliki specjalne blokowe, potoki/kolejki FIFO, linki symboliczne i sokety. 
+
+Ścieżka podana jako argument wywołania może być względna lub bezwzględna. Program nie powinien podążać za dowiązaniami symbolicznymi do katalogów.
+
+Program należy zaimplementować w dwóch wariantach:
+- korzystając z funkcji opendir(), readdir() oraz funkcji z rodziny stat (25%)
+- korzystając z funkcji nftw() (25%)
