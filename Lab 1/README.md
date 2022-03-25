@@ -35,6 +35,7 @@ a) (25%) Przygotuj plik Makefile, zawierający polecenie uruchamiania testów or
 - z wykorzystaniem bibliotek dzielonych (dynamiczne, ładowane przy uruchomieniu programu)
 - z wykorzystaniem bibliotek ładowanych dynamicznie (dynamiczne, ładowane przez program)
 Wyniki pomiarów zbierz w pliku results3a.txt. Otrzymane wyniki krótko skomentuj.
+
 b) (25%) Rozszerz plik Makefile z punktu 3a) dodając możliwość skompilowania programu na trzech różnych  poziomach optymalizacji — -O0…-Os. Przeprowadź ponownie pomiary, kompilując i uruchamiając program dla różnych poziomów optymalizacji.
 Wyniki pomiarów dodaj do pliku results3b.txt. Otrzymane wyniki krótko skomentuj.
 <h6> Wygenerowane pliki z raportami załącz jako element rozwiązania. </h6>
