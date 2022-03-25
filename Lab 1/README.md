@@ -2,28 +2,39 @@ W zadaniach 1-2 proszę skorzystać z obu wariantów implementacji:
 - lib - przy użyciu funkcji biblioteki C: fread() i fwrite()
 - sys - przy użyciu funkcji systemowych: read() i write()
 
-<h1> Zadanie 1 (25%) </h1>
-Napisz program, który kopiuje zawartość jednego pliku do drugiego z usuwaniem pustych linii (zawierających tylko "whitespace characters"). Jeśli argumentów nie podano, wówczas nazwy plików mają być pobrane od użytkownika.
+<h1> Zadanie 1. Alokacja tablicy ze wskaźnikami na bloki pamięci zawierające znaki (25%) </h1>
+Zaprojektuj i przygotuj zestaw funkcji (bibliotekę) do zarządzania tablicą bloków, w których to blokach pamięci zapisywane są rezultaty operacji zliczania lini, słów i znaków (poleceniem wc) w plikach przekazywanych jako odpowiedni parametr.
 
-<h1> Zadanie 2 (25%) </h1>
-Napisz program, który przyjmuje 2 argumenty wiersza poleceń. Pierwszy z argumentów jest znakiem, drugi nazwą pliku. Program powinien policzyć ile razy występuje podany znak oraz liczbę wierszy pliku wejściowego, które zawierają dany znak. Zakładamy, że każdy wiersz w pliku kończy się znakiem przejścia do nowej linii. Przyjmujemy, że żaden wiersz nie przekracza długości 256 znaków.
+Biblioteka powinna umożliwiać:
+- utworzenie tablicy wskaźników w której będą przechowywane wskaźniki na bloki pamięci zawierające wyniki 
+- przeprowadzenie zliczenia lini, słów i znaków dla zadanych plików i zapisanie wyniku zliczania w pliku tymczasowym
+- zarezerwowanie bloku pamięci o rozmiarze odpowiadającym rozmiarowi pliku tymczasowego i zapisanie w tej pamięci jego zawartości, ustawienie w tablicy wskaźników wskazania na ten blok, funkcja powinna zwrócić indeks stworzonego bloku w tablicy,
+- usunięcie z pamięci bloku o zadanym indeksie
 
-<h6> Dla obu wariantów implementacji należy przeprowadzić pomiar czasu wykonywania obu wariantów programów. Wyniki należy przedstawić w formie pliku pomiar_zad_x.txt </h6>
+Tablice / bloki powinny być alokowane przy pomocy funkcji calloc() (alokacja dynamiczna).
+Przygotuj plik Makefile, zawierający polecenia kompilujące pliki źródłowe biblioteki oraz tworzące biblioteki w dwóch wersjach: statyczną i współdzieloną.
 
-<h1> Zadanie 3 (50%) </h1>
-Napisz program, który będzie przeglądał katalog podany jako argument i kolejno wszystkie jego podkatalogi. 
-Program ma wypisać na standardowe wyjście następujące informacje o znalezionych plikach:
- ścieżka bezwzględna pliku,
--liczbę dowiązań,
-- rodzaj pliku (zwykły plik - file, katalog - dir, urządzenie znakowe - char dev, urządzenie blokowe - block dev, potok nazwany - fifo, link symboliczny - slink, soket - sock),
-- rozmiar w bajtach,
-- datę ostatniego dostępu,
-- datę ostatniej modyfikacji.
+<h1>Zadanie 2. Program korzystający z biblioteki (25%) </h1>
+Napisz program testujący działanie funkcji z biblioteki z zadania 1. Jako argumenty przekaż liczbę elementów tablicy głównej (liczbę par plików) oraz listę zadań do wykonania. Zadania mogą stanowić zadania zliczenia dla wszystkich plików lub zadania usunięcia bloku o podanym indeksie. Operacje mogą być specyfikowane w linii poleceń na przykład jak poniżej:
+- create_table rozmiar — stworzenie tablicy o rozmiarze "rozmiar"
+- wc_files file1.txt file2.txt … — zliczenie dla plików
+- remove_block index — usuń z tablicy bloków o indeksie index
 
-Na koniec ma wypisać na standardowe wyjście informacje o liczbach plików poszczególnych rodzajów, zawartych w tym katalogu i wszystkich jego podkatalogach. Powinny zostać zliczone: zwykłe pliki, katalogi, pliki specjalne znakowe, pliki specjalne blokowe, potoki/kolejki FIFO, linki symboliczne i sokety. 
+Program powinien stworzyć tablice bloków o zadanej liczbie elementów.
+W programie zmierz, wypisz na konsolę i zapisz do pliku z raportem czasy realizacji podstawowych operacji:
+- przeprowadzenie zliczeń plików — różna wielkość plików (małe, średnie, duże) oraz różna ilość plików na raz (1 - 10)
+- zapisanie, w pamięci, bloków o różnych rozmiarach (odpowiadających rozmiarom różnych przeprowadzonych zliczeń)
+- usunięcie zaalokowanych bloków o różnych rozmiarach  (odpowiadających rozmiarom różnych przeprowadzonych zliczeń)
+- na przemian  kilkakrotne dodanie i usunięcie zadanej liczby bloków 
 
-Ścieżka podana jako argument wywołania może być względna lub bezwzględna. Program nie powinien podążać za dowiązaniami symbolicznymi do katalogów.
+Mierząc czasy poszczególnych operacji, zapisz trzy wartości: czas rzeczywisty, czas użytkownika i czas systemowy. Rezultaty umieść pliku raport2.txt i dołącz do archiwum zadania.
 
-Program należy zaimplementować w dwóch wariantach:
-- korzystając z funkcji opendir(), readdir() oraz funkcji z rodziny stat (25%)
-- korzystając z funkcji nftw() (25%)
+<h1> Zadanie 3. Testy i pomiary (50%) </h1>
+a) (25%) Przygotuj plik Makefile, zawierający polecenie uruchamiania testów oraz polecenia kompilacji programu z zad 2 na trzy sposoby
+- z wykorzystaniem bibliotek statycznych
+- z wykorzystaniem bibliotek dzielonych (dynamiczne, ładowane przy uruchomieniu programu)
+- z wykorzystaniem bibliotek ładowanych dynamicznie (dynamiczne, ładowane przez program)
+Wyniki pomiarów zbierz w pliku results3a.txt. Otrzymane wyniki krótko skomentuj.
+b) (25%) Rozszerz plik Makefile z punktu 3a) dodając możliwość skompilowania programu na trzech różnych  poziomach optymalizacji — -O0…-Os. Przeprowadź ponownie pomiary, kompilując i uruchamiając program dla różnych poziomów optymalizacji.
+Wyniki pomiarów dodaj do pliku results3b.txt. Otrzymane wyniki krótko skomentuj.
+<h6> Wygenerowane pliki z raportami załącz jako element rozwiązania. </h6>
