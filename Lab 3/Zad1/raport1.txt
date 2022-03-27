@@ -1,0 +1,24 @@
+PID glownego programu: 2269
+Proces rodzica: Proces rodzica ma pid:2269
+Proces rodzica: Proces dziecka ma pid:2270
+PID glownego programu: 2269
+Proces rodzica: Proces rodzica ma pid:2269
+Proces rodzica: Proces dziecka ma pid:2271
+PID glownego programu: 2269
+Proces rodzica: Proces rodzica ma pid:2269
+Proces rodzica: Proces dziecka ma pid:2270
+PID glownego programu: 2269
+Proces dziecka: Proces rodzica ma pid:2269
+Proces dziecka: Proces dziecka ma pid:2271
+PID glownego programu: 2269
+Proces dziecka: Proces rodzica ma pid:2269
+Proces dziecka: Proces dziecka ma pid:2270
+PID glownego programu: 2270
+Proces rodzica: Proces rodzica ma pid:2270
+Proces rodzica: Proces dziecka ma pid:2272
+PID glownego programu: 2269
+Proces dziecka: Proces rodzica ma pid:2269
+Proces dziecka: Proces dziecka ma pid:2270
+PID glownego programu: 2270
+Proces dziecka: Proces rodzica ma pid:2270
+Proces dziecka: Proces dziecka ma pid:2272
