@@ -4,7 +4,7 @@ Napisz program, w którym z procesu macierzystego stworzysz dokładnie n proces�
 W każdym z procesów potomnych wypisz komunikat, w którym poinformujesz z którego procesu napis pochodzi.
 
 <h1> Zadanie 2 (40%) </h1>
-Napisz program, który liczy numerycznie wartość całki oznaczonej z funkcji 4/(x2+1) w przedziale od 0 do 1 metodą prostokątów
+Napisz program, który liczy numerycznie wartość całki oznaczonej z funkcji 4/(x^2+1) w przedziale od 0 do 1 metodą prostokątów
 (z definicji całki oznaczonej Riemanna). Pierwszy parametr programu to szerokość każdego prostokąta, określająca dokładność obliczeń.
 Obliczenia należy rozdzielić na n procesów potomnych (n drugi parametr wywołania programu). Każdy z procesów powinien wynik swojej części
 obliczeń wpisywać do pliku o nazwie "wN.txt" , gdzie N oznacza numer procesu potomnego liczony od 1 i nadawany procesom w kolejności ich tworzenia.
