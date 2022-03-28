@@ -11,13 +11,11 @@ long double time_sec(clock_t time){
     return (long double)(time) / sysconf(_SC_CLK_TCK);
 }
 
-
 void print_res(clock_t start_timer, clock_t stop_timer, struct tms start_tms, struct tms end_tms){
     printf("real %Lf\n", time_sec(stop_timer - start_timer));
     printf("user %Lf\n", time_sec(end_tms.tms_utime - start_tms.tms_utime));
     printf("sys  %Lf\n\n", time_sec(end_tms.tms_stime - start_tms.tms_stime));
 }
-
 
 double f(double x){
     return 4/(x*x + 1);
