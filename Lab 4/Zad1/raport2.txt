@@ -1,0 +1,87 @@
+ FOR FORK 
+ 
+~~~~~~~IGNORE TEST~~~~~
+Raising child signal 
+forked sucesfully
+forked sucesfully
+forked sucesfully
+Raising child signal 
+Raising child signal 
+forked sucesfully
+forked sucesfully
+
+Raising child signal 
+forked sucesfully
+Raising child signal 
+~~~~HANDLER TEST~~~~~~
+SIGUSR1 received
+Raising child signal 
+SIGUSR1 received
+SIGUSR1 received
+forked sucesfully
+SIGUSR1 received
+SIGUSR1 received
+SIGUSR1 received
+forked sucesfully
+SIGUSR1 received
+SIGUSR1 received
+forked sucesfully
+SIGUSR1 received
+Raising child signal 
+SIGUSR1 received
+SIGUSR1 received
+Raising child signal 
+SIGUSR1 received
+SIGUSR1 received
+forked sucesfully
+SIGUSR1 received
+SIGUSR1 received
+SIGUSR1 received
+forked sucesfully
+
+SIGUSR1 received
+Raising child signal 
+SIGUSR1 received
+SIGUSR1 received
+forked sucesfully
+SIGUSR1 received
+Raising child signal 
+SIGUSR1 received
+~~~~~~MASK TEST~~~~~~ 
+
+~~~~~~PENDING TEST~~~~~ 
+signal 10 is not pending
+signal 10 is not pending
+forked sucesfully
+signal 10 is not pending
+signal 10 is not pending
+signal 10 is not pending
+forked sucesfully
+
+
+ FOR EXEC 
+~~~~~~~IGNORE TEST~~~~~
+Raising child signal 
+forked sucesfully
+forked sucesfully
+forked sucesfully
+Raising child signal 
+Raising child signal 
+forked sucesfully
+forked sucesfully
+
+Raising child signal 
+forked sucesfully
+Raising child signal 
+~~~~~~MASK TEST~~~~~~ 
+
+~~~~~~PENDING TEST~~~~~ 
+signal 10 is not pending
+signal 10 is not pending
+forked sucesfully
+signal 10 is not pending
+signal 10 is not pending
+signal 10 is not pending
+forked sucesfully
+
+
