@@ -1,0 +1,48 @@
+======= TESTING SIGINFO ========
+Got a SIGINT signal
+Signal number: 10 
+Process ID of sending process: 382 
+Parent PID: 381 
+Signal code: -6
+User time of the signal: 0
+Signal value: 0 
+
+Got a SIGINT signal
+Signal number: 12 
+Process ID of sending process: 382 
+Parent PID: 381 
+Signal code: -6
+User time of the signal: 0
+Signal value: 0 
+
+Got a SIGINT signal
+Signal number: 34 
+Process ID of sending process: 382 
+Parent PID: 381 
+Signal code: -6
+User time of the signal: 0
+Signal value: 0 
+
+***** TESTING SA_RESETHAND ***** 
+Raising with the SA_RESETHAND set: 
+Got a SIGINT signal with flag SA_RESETHAND 
+Resetting signal handling to SIG_DFL 
+
+Raising with the SA_RESETHAND set for the second time: 
+Got a SIGINT signal with flag SA_RESETHAND 
+Resetting signal handling to SIG_DFL 
+
+
+***** TESTING SA_NODEFER ***** 
+Starting handliing SA_NODEFER number 0 
+Starting handliing SA_NODEFER number 1 
+Starting handliing SA_NODEFER number 2 
+Starting handliing SA_NODEFER number 3 
+Starting handliing SA_NODEFER number 4 
+Ending handliing SA_NODEFER number 0 
+Ending handliing SA_NODEFER number 1 
+Ending handliing SA_NODEFER number 2 
+Ending handliing SA_NODEFER number 3 
+Ending handliing SA_NODEFER number 4 
+
+
