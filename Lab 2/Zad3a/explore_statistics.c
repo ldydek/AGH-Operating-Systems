@@ -44,6 +44,17 @@ void show_stats(char path[], struct stat *file_stats) {
         strcpy(file_type, "socket");
         sockets++;
     }
+    
+    struct tm modif_tm;
+    localtime_r(&ptr_to_stat->st_mtime, &modif_tm);
+    char modif_str[MAX_TIME_LEN];
+    strftime(modif_str, MAX_TIME_LEN, time_format, &modif_tm);
+
+    struct tm access_tm;
+    localtime_r(&ptr_to_stat->st_atime, &access_tm);
+    char access_str[MAX_TIME_LEN];
+    strftime(access_str, MAX_TIME_LEN, time_format, &access_tm);
+    
     printf("Path: %s, links number: %ld, type: %s, size: %ld, last access time: %s, last modification time: %s\n",
            path, file_stats->st_nlink, file_type, file_stats->st_size, access_str, modif_str);
 }
