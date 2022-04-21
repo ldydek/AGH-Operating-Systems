@@ -9,6 +9,7 @@ Przydatne funkcje systemowe: kill, raise, sigqueue, signal, sigaction, sigemptys
 <h1> Zadanie 1 (30%) </h1>
 Napisz program demonstrujący, czy ustawienia dyspozycji dla sygnałów, ich maski oraz czekające sysgnały są dziedziczone po wykonaniu funkcji fork oraz exec.
 W szczególności eksperymenty proszę wykonać dla sygnału SIGUSR1 w następujący sposób:
+
 - Dziedziczenie ustawień sygnałów po wykonaniu funkcji fork. Proszę napisać program, który w zależności od wartości argumentu z linii poleceń,
 który może przyjmować wartości ignore, handler, mask lub pending, odpowiednio w procesie przodka ustawia ignorowanie, instaluje handler obsługujący sygnał 
 wypisujący komunikat o jego otrzymaniu, maskuje ten sygnał oraz sprawdza (przy zamaskowaniu tego sygnału) czy wiszący/oczekujący sygnał jest widoczny w procesie,
