@@ -15,8 +15,10 @@ wypisujący komunikat o jego otrzymaniu, maskuje ten sygnał oraz sprawdza (przy
 a następnie przy pomocy funkcji raise wysyła sygnał do samego siebie oraz wykonuje odpowiednie dla danej opcji działania, po czym tworzy potomka funkcją fork
 i ponownie przy pomocy funkcji raise potomek wysyła sygnał do samego siebie (z wyjątkiem opcji pending, gdzie testowane jest sprawdzenie,
 czy sygnał czekający w przodku jest widoczny w potomku).
+
 - Dziedziczenie ustawień sygnałów po wykonaniu funkcji exec. W podobny sposób sprawdź jaki wpływ na ustawienia sygnałów ma wywołanie funkcji exec.
 Rozpatrz opcje:  ignore, mask i pending.
+
 - Przygotuj plik raport2.txt w którym nastąpi podsumowanie z wnioskami z wykonanych powyższych eksperymentów
 
 <h1> Zadanie 2 (20%) </h1>
