@@ -4,7 +4,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include "explore_statistics"
-#incluce <string.h>
+#include <string.h>
 
 int files;
 int directories;
