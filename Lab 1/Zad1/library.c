@@ -54,10 +54,10 @@ int find_next_empty_block() {
 }
 
 int get_file_size(FILE* fp) {
-	fseek(fp, 0, SEEK_END);
-	int size = ftell(fp);
+    fseek(fp, 0, SEEK_END);
+    int size = ftell(fp);
     rewind(fp);
-	return size;
+    return size;
 }
 
 void create_block(int file_size, int i) {
