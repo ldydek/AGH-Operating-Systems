@@ -17,11 +17,11 @@ int main() {
         sleep(1);
         exit(EXIT_SUCCESS);
     } else {
-/* Proces macierzysty pobiera status  zakoÒczenie potomka child,
- * nie zawieszajπc swojej pracy. Jeúli proces siÍ nie zakoÒczy≥, wysy≥a do dziecka sygna≥ SIGKILL.
- * Jeúli wys≥anie sygna≥u siÍ nie powiod≥o, ponownie oczekuje na zakoÒczenie procesu child,
- * tym razem zawieszajπc pracÍ do czasu zakoÒczenia sygna≥u
- * jeúli siÍ powiod≥o, wypisuje komunikat sukcesu zakoÒczenia procesu potomka z numerem jego PID i statusem zakoÒczenia. */
+/* Proces macierzysty pobiera status  zako≈Ñczenie potomka child,
+ * nie zawieszajƒÖc swojej pracy. Je≈õli proces siƒô nie zako≈Ñczy≈Ç, wysy≈Ça do dziecka sygna≈Ç SIGKILL.
+ * Je≈õli wys≈Çanie sygna≈Çu siƒô nie powiod≈Ço, ponownie oczekuje na zako≈Ñczenie procesu child,
+ * tym razem zawieszajƒÖc pracƒô do czasu zako≈Ñczenia sygna≈Çu
+ * je≈õli siƒô powiod≈Ço, wypisuje komunikat sukcesu zako≈Ñczenia procesu potomka z numerem jego PID i statusem zako≈Ñczenia. */
 
     // parent
    waitpid(child, &status, WNOHANG);
@@ -34,6 +34,14 @@ int main() {
             printf("Child process terminated with PID: %d and status: %d\n", child, WEXITSTATUS(status));
         }
     }
+    /**
+    if (waitpid(child, &status, WNOHANG) == 0) {
+            wait(&status);
+            printf("Proces %d zako≈Ñczony przez sygna≈Ç ze statusem %d\n", child,WEXITSTATUS(status));
+        } else {
+            printf("Proces %d zako≈Ñczony przez exit", child);
+        }
+    **/
     // CHYBA DONE
 /* koniec*/
     } //else
