@@ -1,0 +1,112 @@
+Number of threads: 1
+Method used: numbers
+thread id:   0 - time: 140736918074608 μs
+Total time: 4453 μs
+
+
+Number of threads: 1
+Method used: block
+thread id:   0 - time: 140736471913712 μs
+Total time: 5000 μs
+
+
+Number of threads: 2
+Method used: numbers
+thread id:   0 - time: 140736548181232 μs
+thread id:   1 - time: 140736548181232 μs
+Total time: 5693 μs
+
+
+Number of threads: 2
+Method used: block
+thread id:   0 - time: 140736603788528 μs
+thread id:   1 - time: 140736603788528 μs
+Total time: 4675 μs
+
+
+Number of threads: 4
+Method used: numbers
+thread id:   0 - time: 140736714016000 μs
+thread id:   1 - time: 140736714016000 μs
+thread id:   2 - time: 140736714016000 μs
+thread id:   3 - time: 140736714016000 μs
+Total time: 10494 μs
+
+
+Number of threads: 4
+Method used: block
+thread id:   0 - time: 140736371070208 μs
+thread id:   1 - time: 140736371070208 μs
+thread id:   2 - time: 140736371070208 μs
+thread id:   3 - time: 140736371070208 μs
+Total time: 4184 μs
+
+
+Number of threads: 8
+Method used: numbers
+thread id:   0 - time: 140736670942496 μs
+thread id:   1 - time: 140736670942496 μs
+thread id:   2 - time: 140736670942496 μs
+thread id:   3 - time: 140736670942496 μs
+thread id:   4 - time: 140736670942496 μs
+thread id:   5 - time: 140736670942496 μs
+thread id:   6 - time: 140736670942496 μs
+thread id:   7 - time: 140736670942496 μs
+Total time: 9692 μs
+
+
+Number of threads: 8
+Method used: block
+thread id:   0 - time: 140736984409376 μs
+thread id:   1 - time: 140736984409376 μs
+thread id:   2 - time: 140736984409376 μs
+thread id:   3 - time: 140736984409376 μs
+thread id:   4 - time: 140736984409376 μs
+thread id:   5 - time: 140736984409376 μs
+thread id:   6 - time: 140736984409376 μs
+thread id:   7 - time: 140736984409376 μs
+Total time: 12252 μs
+
+
+Number of threads: 16
+Method used: numbers
+thread id:   0 - time: 140737301129408 μs
+thread id:   1 - time: 140737301129408 μs
+thread id:   2 - time: 140737301129408 μs
+thread id:   3 - time: 140737301129408 μs
+thread id:   4 - time: 140737301129408 μs
+thread id:   5 - time: 140737301129408 μs
+thread id:   6 - time: 140737301129408 μs
+thread id:   7 - time: 140737301129408 μs
+thread id:   8 - time: 140737301129408 μs
+thread id:   9 - time: 140737301129408 μs
+thread id:  10 - time: 140737301129408 μs
+thread id:  11 - time: 140737301129408 μs
+thread id:  12 - time: 140737301129408 μs
+thread id:  13 - time: 140737301129408 μs
+thread id:  14 - time: 140737301129408 μs
+thread id:  15 - time: 140737301129408 μs
+Total time: 20942 μs
+
+
+Number of threads: 16
+Method used: block
+thread id:   0 - time: 140736582813888 μs
+thread id:   1 - time: 140736582813888 μs
+thread id:   2 - time: 140736582813888 μs
+thread id:   3 - time: 140736582813888 μs
+thread id:   4 - time: 140736582813888 μs
+thread id:   5 - time: 140736582813888 μs
+thread id:   6 - time: 140736582813888 μs
+thread id:   7 - time: 140736582813888 μs
+thread id:   8 - time: 140736582813888 μs
+thread id:   9 - time: 140736582813888 μs
+thread id:  10 - time: 140736582813888 μs
+thread id:  11 - time: 140736582813888 μs
+thread id:  12 - time: 140736582813888 μs
+thread id:  13 - time: 140736582813888 μs
+thread id:  14 - time: 140736582813888 μs
+thread id:  15 - time: 140736582813888 μs
+Total time: 27979 μs
+
+
