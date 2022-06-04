@@ -1,0 +1,8 @@
+Dla N,M = 3 mamy:
+- zadowalającą pojemność pieca (rzadko się przepełnia)
+- stół często się przepełnia
+- dostawcy nie nadążają z pracą
+- kucharze często czekają aż na stole pojawi się miejsce
+
+Dla N,M = 7 mamy:
+- sytuacja analogiczna do N,M = 3
