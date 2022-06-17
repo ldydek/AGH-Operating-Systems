@@ -1,3 +1,4 @@
+<h2> IPC - kolejki komunikatów </h2>
 <h2> Przydatne funkcje </h2>
 
 System V:
