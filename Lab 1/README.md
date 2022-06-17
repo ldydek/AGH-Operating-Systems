@@ -1,3 +1,4 @@
+<h2> Zarządzanie pamięcią, biblioteki, pomiar czasu </h2>
 W zadaniach 1-2 proszę skorzystać z obu wariantów implementacji:
 - lib - przy użyciu funkcji biblioteki C: fread() i fwrite()
 - sys - przy użyciu funkcji systemowych: read() i write()
