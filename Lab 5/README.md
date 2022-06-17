@@ -1,3 +1,4 @@
+<h2> Potoki nazwane i nienazwane </h2>
 <h1> Zadanie 1 (40%) </h1>
 
 Napisz interpreter poleceń przechowywanych w pliku. Ścieżka do pliku to pierwszy argument wywołania programu.
